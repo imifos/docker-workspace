@@ -18,8 +18,8 @@ Pulls and compiles the following libraries in addition to the tool:
 Usage:
 
   * Install Docker
-  * Checkout this repo: ```git clone https://github.com/imifos/tsschecker-docker```
-  * Enter the ```Dockerfile``` directory.
+  * Checkout this repo: ```git clone https://github.com/imifos/docker-workspace```
+  * Enter the container directory.
   * Run ```docker build -t tsschecker .``` (you can choose a different name).
   * Watch the show.
   

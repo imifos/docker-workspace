@@ -1,4 +1,4 @@
-# tsschecker in docker
+# tsschecker
 # 
 # Pulls and compiles latest versions of source code from original repositories.
 # 
