@@ -1,0 +1,3 @@
+[submodule "autopsy-docker"]
+	path = autopsy-docker
+	url = https://github.com/imifos/autopsy-docker
