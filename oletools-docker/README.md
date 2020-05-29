@@ -15,6 +15,43 @@ Open a shell in the current host directory:
 
 The -v flag mounts the current working directory into the container. The -w lets the command being executed inside the current working directory, by changing into the directory to the value returned by pwd. So this combination executes the command using the container, but inside the current working directory. (Source https://docs.docker.com/engine/reference/commandline/run)
 
+<br />
+
+THE DOCKER IMAGE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR MAINTAINER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  
+<br />
+<br />
+<br />
+    
+# OLETOOLS Readme
+
+[oletools](http://www.decalage.info/python/oletools) is a package of python tools to analyze
+[Microsoft OLE2 files](http://en.wikipedia.org/wiki/Compound_File_Binary_Format) 
+(also called Structured Storage, Compound File Binary Format or Compound Document File Format), 
+such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. 
+It is based on the [olefile](http://www.decalage.info/olefile) parser. 
+See [http://www.decalage.info/python/oletools](http://www.decalage.info/python/oletools) for more info.  
+
+### Tools to analyze malicious documents
+
+- [oleid](https://github.com/decalage2/oletools/wiki/oleid): to analyze OLE files to detect specific characteristics usually found in malicious files.
+- [olevba](https://github.com/decalage2/oletools/wiki/olevba): to extract and analyze VBA Macro source code from MS Office documents (OLE and OpenXML).
+- [MacroRaptor](https://github.com/decalage2/oletools/wiki/mraptor): to detect malicious VBA Macros
+- [msodde](https://github.com/decalage2/oletools/wiki/msodde): to detect and extract DDE/DDEAUTO links from MS Office documents, RTF and CSV
+- [pyxswf](https://github.com/decalage2/oletools/wiki/pyxswf): to detect, extract and analyze Flash objects (SWF) that may
+  be embedded in files such as MS Office documents (e.g. Word, Excel) and RTF,
+  which is especially useful for malware analysis.
+- [oleobj](https://github.com/decalage2/oletools/wiki/oleobj): to extract embedded objects from OLE files.
+- [rtfobj](https://github.com/decalage2/oletools/wiki/rtfobj): to extract embedded objects from RTF files.
+
+### Tools to analyze the structure of OLE files
+
+- [olebrowse](https://github.com/decalage2/oletools/wiki/olebrowse): A simple GUI to browse OLE files (e.g. MS Word, Excel, Powerpoint documents), to
+  view and extract individual data streams.
+- [olemeta](https://github.com/decalage2/oletools/wiki/olemeta): to extract all standard properties (metadata) from OLE files.
+- [oletimes](https://github.com/decalage2/oletools/wiki/oletimes): to extract creation and modification timestamps of all streams and storages.
+- [oledir](https://github.com/decalage2/oletools/wiki/oledir): to display all the directory entries of an OLE file, including free and orphaned entries.
+- [olemap](https://github.com/decalage2/oletools/wiki/olemap): to display a map of all the sectors in an OLE file.
 
 
 # OLETOOLS License
